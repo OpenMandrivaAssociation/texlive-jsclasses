@@ -1,3 +1,9 @@
+# revision 18430
+# category Package
+# catalog-ctan /macros/latex/contrib/jsclasses
+# catalog-date 2007-12-08 14:15:18 +0100
+# catalog-license bsd
+# catalog-version undef
 Name:		texlive-jsclasses
 Version:	20071208
 Release:	1
@@ -57,6 +63,7 @@ ptex.
 %doc %{_texmfdistdir}/source/platex/jsclasses/okumacro.ins
 %doc %{_texmfdistdir}/source/platex/jsclasses/okuverb.dtx
 %doc %{_texmfdistdir}/source/platex/jsclasses/okuverb.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,3 +74,5 @@ ptex.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
