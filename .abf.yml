@@ -1,3 +1,4 @@
 sources:
-  "jsclasses.source.tar.xz": 0154ccd6931687ed13a61a830b3387f80886ea61
-  "jsclasses.tar.xz": ad90355aabcd0a2d425b10699bcf1892aabacf7d
+  jsclasses.doc.tar.xz: b37d2ee21beb0942333316f4e25064d510b68d44
+  jsclasses.source.tar.xz: b423f99de437bf06a5bbec4900fc9dbef371c6b0
+  jsclasses.tar.xz: a773f41f5a2146b5c11c981ce9af6aabd57f83d2

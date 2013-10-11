@@ -1,18 +1,19 @@
-# revision 18430
+# revision 30855
 # category Package
 # catalog-ctan /macros/latex/contrib/jsclasses
-# catalog-date 2007-12-08 14:15:18 +0100
+# catalog-date 2013-05-27 13:53:30 +0200
 # catalog-license bsd
 # catalog-version undef
 Name:		texlive-jsclasses
-Version:	20071208
-Release:	2
+Version:	20130527
+Release:	1
 Summary:	Classes tailored for use with Japanese
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jsclasses
 License:	BSD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.source.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.doc.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -43,6 +44,12 @@ ptex.
 %{_texmfdistdir}/tex/platex/jsclasses/morisawa.sty
 %{_texmfdistdir}/tex/platex/jsclasses/okumacro.sty
 %{_texmfdistdir}/tex/platex/jsclasses/okuverb.sty
+%doc %{_texmfdistdir}/doc/platex/jsclasses/README
+%doc %{_texmfdistdir}/doc/platex/jsclasses/jsclasses.pdf
+%doc %{_texmfdistdir}/doc/platex/jsclasses/jsverb.pdf
+%doc %{_texmfdistdir}/doc/platex/jsclasses/morisawa.pdf
+%doc %{_texmfdistdir}/doc/platex/jsclasses/okumacro.pdf
+%doc %{_texmfdistdir}/doc/platex/jsclasses/okuverb.pdf
 #- source
 %doc %{_texmfdistdir}/source/platex/jsclasses/jsclasses.dtx
 %doc %{_texmfdistdir}/source/platex/jsclasses/jsclasses.ins
@@ -57,24 +64,10 @@ ptex.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%setup -c -a0 -a1 -a2
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20071208-2
-+ Revision: 752933
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20071208-1
-+ Revision: 718757
-- texlive-jsclasses
-- texlive-jsclasses
-- texlive-jsclasses
-- texlive-jsclasses
-
+cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
