@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-jsclasses
 Version:	20071208
-Release:	2
+Release:	3
 Summary:	Classes tailored for use with Japanese
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jsclasses
