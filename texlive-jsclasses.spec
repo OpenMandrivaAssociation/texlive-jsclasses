@@ -1,12 +1,12 @@
-# revision 30855
+# revision 34224
 # category Package
 # catalog-ctan /macros/latex/contrib/jsclasses
-# catalog-date 2013-05-27 13:53:30 +0200
+# catalog-date 2014-05-23 15:52:39 +0200
 # catalog-license bsd
 # catalog-version undef
 Name:		texlive-jsclasses
-Version:	20130527
-Release:	6
+Version:	20140523
+Release:	1
 Summary:	Classes tailored for use with Japanese
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jsclasses
