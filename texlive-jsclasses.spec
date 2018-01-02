@@ -1,12 +1,6 @@
-# revision 34224
-# category Package
-# catalog-ctan /macros/latex/contrib/jsclasses
-# catalog-date 2014-05-23 15:52:39 +0200
-# catalog-license bsd
-# catalog-version undef
 Name:		texlive-jsclasses
-Version:	20140523
-Release:	4
+Version:	20171006
+Release:	1
 Summary:	Classes tailored for use with Japanese
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jsclasses
@@ -35,32 +29,10 @@ ptex.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/platex/jsclasses/jsarticle.cls
-%{_texmfdistdir}/tex/platex/jsclasses/jsbook.cls
-%{_texmfdistdir}/tex/platex/jsclasses/jspf.cls
-%{_texmfdistdir}/tex/platex/jsclasses/jsverb.sty
-%{_texmfdistdir}/tex/platex/jsclasses/kiyou.cls
-%{_texmfdistdir}/tex/platex/jsclasses/minijs.sty
-%{_texmfdistdir}/tex/platex/jsclasses/morisawa.sty
-%{_texmfdistdir}/tex/platex/jsclasses/okumacro.sty
-%{_texmfdistdir}/tex/platex/jsclasses/okuverb.sty
-%doc %{_texmfdistdir}/doc/platex/jsclasses/README
-%doc %{_texmfdistdir}/doc/platex/jsclasses/jsclasses.pdf
-%doc %{_texmfdistdir}/doc/platex/jsclasses/jsverb.pdf
-%doc %{_texmfdistdir}/doc/platex/jsclasses/morisawa.pdf
-%doc %{_texmfdistdir}/doc/platex/jsclasses/okumacro.pdf
-%doc %{_texmfdistdir}/doc/platex/jsclasses/okuverb.pdf
+%{_texmfdistdir}/tex/platex/jsclasses
+%doc %{_texmfdistdir}/doc/platex/jsclasses
 #- source
-%doc %{_texmfdistdir}/source/platex/jsclasses/jsclasses.dtx
-%doc %{_texmfdistdir}/source/platex/jsclasses/jsclasses.ins
-%doc %{_texmfdistdir}/source/platex/jsclasses/jsverb.dtx
-%doc %{_texmfdistdir}/source/platex/jsclasses/jsverb.ins
-%doc %{_texmfdistdir}/source/platex/jsclasses/morisawa.dtx
-%doc %{_texmfdistdir}/source/platex/jsclasses/morisawa.ins
-%doc %{_texmfdistdir}/source/platex/jsclasses/okumacro.dtx
-%doc %{_texmfdistdir}/source/platex/jsclasses/okumacro.ins
-%doc %{_texmfdistdir}/source/platex/jsclasses/okuverb.dtx
-%doc %{_texmfdistdir}/source/platex/jsclasses/okuverb.ins
+%doc %{_texmfdistdir}/source/platex/jsclasses
 
 #-----------------------------------------------------------------------
 %prep
