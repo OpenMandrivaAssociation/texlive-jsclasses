@@ -1,5 +1,5 @@
 Name:		texlive-jsclasses
-Version:	20180312
+Version:	20180625
 Release:	1
 Summary:	Classes tailored for use with Japanese
 Group:		Publishing
