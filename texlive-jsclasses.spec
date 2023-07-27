@@ -1,6 +1,6 @@
 Name:		texlive-jsclasses
-Version:	64386
-Release:	2
+Version:	66093
+Release:	1
 Summary:	Classes tailored for use with Japanese
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jsclasses
