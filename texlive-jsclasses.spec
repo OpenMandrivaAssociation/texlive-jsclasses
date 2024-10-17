@@ -3,7 +3,7 @@ Version:	66093
 Release:	1
 Summary:	Classes tailored for use with Japanese
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jsclasses
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/jsclasses
 License:	BSD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.doc.r%{version}.tar.xz
