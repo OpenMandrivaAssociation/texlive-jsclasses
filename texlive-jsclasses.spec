@@ -1,46 +1,22 @@
-Name:		texlive-jsclasses
-Version:	75174
+%global tl_name jsclasses
+%global tl_revision 77682
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
 Release:	1
 Summary:	Classes tailored for use with Japanese
 Group:		Publishing
-URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/jsclasses
-License:	BSD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.source.r%{version}.tar.xz
+URL:		https://www.ctan.org/tex-archive/macros/jptex/latex/jsclasses
+License:	bsd
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/jsclasses.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-Classes jsarticle and jsbook are provided, together with
-packages okumacro, okuverb and morisawa. These classes are
-designed to work under ASCII Corporation's Japanese TeX system
-ptex.
+Classes jsarticle and jsbook are provided, together with packages
+okumacro and okuverb. These classes are designed to work under ASCII
+Corporation's Japanese TeX system ptex.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/platex/jsclasses
-%doc %{_texmfdistdir}/doc/platex/jsclasses
-#- source
-%doc %{_texmfdistdir}/source/platex/jsclasses
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
